@@ -1,0 +1,55 @@
+.playback-controls {
+  background-color: #000B1D;
+  border-radius: 6px;
+  padding: 6px 10px;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.playback-button {
+  cursor: pointer;
+  width: 18px;
+  height: 24px;
+  margin: 0 18px 0 2px;
+  padding: initial;
+
+  border-top: 12px solid transparent;
+  border-left: 18px solid #1abc9c;
+  border-bottom: 12px solid transparent;
+  border-right: 6px solid transparent;
+  background-color: transparent;
+}
+
+.playback-button._playing {
+  background-color: #1abc9c;
+}
+
+.bpm-input {
+  font-family: monospace;
+  font-size: 32px;
+  text-align: right;
+  color: transparent;
+  text-shadow: 0 0 0 #fff;
+  letter-spacing: 3px;
+
+  background-color: transparent;
+  margin: 0 -10px 0 0;
+
+  width: 86px;
+  padding: initial;
+  border: none;
+}
+
+.bpm-input:focus {
+    outline: none;
+  }
