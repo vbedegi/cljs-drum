@@ -12,7 +12,7 @@
     "ClojureScript"
     [:strong "Drum"]]
    [:ul.credit-links
-    [:li "Made in ClojureScript + re-alm by Viktor Bedegi"]
+    [:li "Made in ClojureScript + re-alm"]
     [credit-link "Github" "https://github.com/vbedegi/cljs-drum"]
     [credit-link "Twitter" "https://twitter.com/vbedegi"]
     [credit-link "Original" "https://bholtbholt.github.io/step-sequencer/"]]])
