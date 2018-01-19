@@ -48,11 +48,18 @@
     [pc/render-playback-controls model dispatch]
     [cr/render-credits]]])
 
+(def howler (aget js/window "deps" "howler"))
+(def Howl (.-Howl howler))
+
+(def samples {"hat"   (Howl. (clj->js {:src ["/samples/hat.mp3"]}))
+              "snare" (Howl. (clj->js {:src ["/samples/snr.mp3"]}))
+              "kick"  (Howl. (clj->js {:src ["/samples/kck.mp3"]}))})
+
 (defrecord SendClipsFx [clips]
   ra/IEffect
   (execute [this dispatch]
-    (.log js/console (str clips))
-    ))
+    (doall
+      (map #(.play (get samples %)) clips))))
 
 (defn send-clips-fx [clips]
   (->SendClipsFx clips))
