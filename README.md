@@ -2,7 +2,7 @@
 
 ## Overview
 
-Port of [ElmDrum](https://bholtbholt.github.io/step-sequencer/), rewritten in ClojureScript + [re-alm](https://github.com/vbedegi/re-alm). All assets are shamelessly reused from the original repository, credits go to [Brian Holt](https://github.com/bholtbholt)
+Remake of [ElmDrum](https://bholtbholt.github.io/step-sequencer/), written in ClojureScript + [re-alm](https://github.com/vbedegi/re-alm). All assets are shamelessly reused from the original repository, credits go to [Brian Holt](https://github.com/bholtbholt)
 
 ## Setup
 
