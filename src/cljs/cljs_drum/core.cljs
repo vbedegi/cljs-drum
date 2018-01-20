@@ -49,11 +49,11 @@
     [cr/render-credits]]])
 
 (def howler (aget js/window "deps" "howler"))
-(def Howl (.-Howl howler))
+(def Howl (aget howler "Howl"))
 
-(def samples {"hat"   (Howl. (clj->js {:src ["/samples/hat.mp3"]}))
-              "snare" (Howl. (clj->js {:src ["/samples/snr.mp3"]}))
-              "kick"  (Howl. (clj->js {:src ["/samples/kck.mp3"]}))})
+(def samples {"hat"   (Howl. (clj->js {:src ["./samples/hat.mp3"]}))
+              "snare" (Howl. (clj->js {:src ["./samples/snr.mp3"]}))
+              "kick"  (Howl. (clj->js {:src ["./samples/kck.mp3"]}))})
 
 (defrecord SendClipsFx [clips]
   ra/IEffect
